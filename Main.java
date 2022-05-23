@@ -28,13 +28,22 @@ public class Main {
 
         ArrayList<Rang> groupeFusionRang = groupeFusion.getRang();
 
+        for(Rang r : groupeFusionRang){
+            System.out.println(r);
+        }
+
         ArrayList<Rang> listeRangGroupe1 = MethodStat.trieParEchantillon(groupeFusionRang,groupe1);
         ArrayList<Rang> listeRangGroupe2 = MethodStat.trieParEchantillon(groupeFusionRang,groupe2);
         ArrayList<Rang> listeRangGroupe3 = MethodStat.trieParEchantillon(groupeFusionRang,groupe3);
 
-        int sommeRangGroupe1 = MethodStat.sommeRang(listeRangGroupe1);
-        int sommeRangGroupe2 = MethodStat.sommeRang(listeRangGroupe2);
-        int sommeRangGroupe3 = MethodStat.sommeRang(listeRangGroupe3);
+        float sommeRangGroupe1 = MethodStat.sommeRang(listeRangGroupe1);
+        float sommeRangGroupe2 = MethodStat.sommeRang(listeRangGroupe2);
+        float sommeRangGroupe3 = MethodStat.sommeRang(listeRangGroupe3);
+
+        System.out.println("SommeRangGroupe1 : "+sommeRangGroupe1);
+        System.out.println("SommeRangGroupe2 : "+sommeRangGroupe2);
+        System.out.println("SommeRangGroupe3 : "+sommeRangGroupe3);
+
 
 
 

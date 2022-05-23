@@ -21,19 +21,22 @@ public class Echantillon extends ArrayList<Observation> {
 
         trierSelonValeurObservation();
 
-        int rang = 1;
+        float rang = 1;
         for(int i=0; i<size(); i++){
 
-            int rangEffectif = rang;
+            float rangEffectif = rang;
             Observation o = get(i);
 
             if(i<size()-1){
                 if(o.valeur.equals(get(i + 1).valeur)){
                     rangEffectif+=0.5;
-
+                    listeRang.add(new Rang(get(i+1),rangEffectif));
+                    i++;
+                    rang++;
                 }
             }
             listeRang.add(new Rang(o,rangEffectif));
+
             rang++;
         }
 

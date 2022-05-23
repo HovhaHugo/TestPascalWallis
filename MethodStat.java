@@ -27,8 +27,8 @@ public class MethodStat {
      * @param liste la liste de rang
      * @return la somme
      */
-    public static int sommeRang(ArrayList<Rang> liste){
-        int resultat = 0;
+    public static float sommeRang(ArrayList<Rang> liste){
+        float resultat = 0;
 
         for(Rang r : liste){
             resultat+=r.rang;
