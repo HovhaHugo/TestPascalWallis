@@ -1,9 +1,11 @@
+package KruskalWallis;
+
 public class Observation {
 
-    Integer valeur;
+    Double valeur;
     Echantillon provientDe;
 
-    public Observation(Integer v, Echantillon e){
+    public Observation(Double v, Echantillon e){
         valeur = v;
         provientDe = e;
     }

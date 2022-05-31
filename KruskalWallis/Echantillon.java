@@ -1,3 +1,5 @@
+package KruskalWallis;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 
@@ -11,7 +13,7 @@ public class Echantillon extends ArrayList<Observation> {
     }
 
     /**
-     * Creer une liste de Rang a partir de la liste appelante. La fonction prend en compte les valeurs en doubles,
+     * Creer une liste de KruskalWallis.Rang a partir de la liste appelante. La fonction prend en compte les valeurs en doubles,
      * mais les valeurs en triples ne sont pas prises en charges correctement
      * @return liste de rang
      */
@@ -41,14 +43,13 @@ public class Echantillon extends ArrayList<Observation> {
         }
 
         return listeRang;
-
     }
 
     /**
      * Trie la liste selon la valeur des observations
      */
     public void trierSelonValeurObservation(){
-        sort(Comparator.comparingInt(o -> o.valeur));
+        sort(Comparator.comparingDouble(o -> o.valeur));
     }
 
 

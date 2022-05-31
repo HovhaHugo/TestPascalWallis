@@ -1,3 +1,5 @@
+package KruskalWallis;
+
 public class Rang {
 
     Observation observation;

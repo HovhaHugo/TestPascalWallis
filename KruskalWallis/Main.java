@@ -1,3 +1,5 @@
+package KruskalWallis;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -13,13 +15,13 @@ public class Main {
         Integer[] listeGroupe3 = {79,83,78,92,98,69,91};
 
         for(Integer i : listeGroupe1)
-            groupe1.add(new Observation(i,groupe1));
+            groupe1.add(new Observation(i.doubleValue(), groupe1));
 
         for(Integer i : listeGroupe2)
-            groupe2.add(new Observation(i,groupe2));
+            groupe2.add(new Observation(i.doubleValue(),groupe2));
 
         for(Integer i : listeGroupe3)
-            groupe3.add(new Observation(i,groupe3));
+            groupe3.add(new Observation(i.doubleValue(),groupe3));
 
         Echantillon groupeFusion = new Echantillon(4);
         groupeFusion.addAll(groupe1);
