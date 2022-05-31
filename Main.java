@@ -69,7 +69,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Ecrire un la valeur du Khi 2 pour un seuil de "+seuil+"% et avec "+nbObservations+" nombre d'observations : ");
+        System.out.print("Ecrire un la valeur du Khi 2 pour un seuil de "+seuil+"% et avec "+(k-1)+" niveau de liberter : ");
 
         double khi = scanner.nextDouble();
 
