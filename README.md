@@ -1,7 +1,7 @@
 # TestStatistique
 Implémentation du test de Kruskal Wallis puis le test de Friedman en java durant le cours de Statistique non parametrique
 
-###Test de Kruskal Wallis :
+### Test de Kruskal Wallis :
 Domaine d'utilisations : Le test peut être effectuer sur K echantillons **INDEPENDANT**
 
 
@@ -28,7 +28,7 @@ Pour conclure on recherche le tAlpha de notre cas dans la table du Khi 2 et on l
 - Si h < tAlpha : On accepte H0
 - Si h > tAlpha : On rejete H0
 
-###Test de Friedman :
+### Test de Friedman :
 Domaine d'utilisations : Le test peut être effectuer sur K echantillons **DEPENDANT**
 
 
