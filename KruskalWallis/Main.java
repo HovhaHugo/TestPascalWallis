@@ -21,19 +21,19 @@ public class Main {
         Integer[] listeGroupe3 = {79,83,78,92,98,69,91};
 
         for(Integer i : listeGroupe1) {
-            groupe1.add(new Observation(i, groupe1));
+            groupe1.add(new Observation(i.doubleValue(), groupe1));
             //On determine le nombre de valeurs, et d'observations
             nbElements++;
             nbObservations++;
         }
 
         for(Integer i : listeGroupe2) {
-            groupe2.add(new Observation(i, groupe2));
+            groupe2.add(new Observation(i.doubleValue(), groupe2));
             nbObservations++;
         }
 
         for(Integer i : listeGroupe3){
-            groupe3.add(new Observation(i,groupe3));
+            groupe3.add(new Observation(i.doubleValue(),groupe3));
             nbObservations++;
         }
 
