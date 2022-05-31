@@ -1,6 +1,7 @@
 package Friedman;
 
 import KruskalWallis.Echantillon;
+import KruskalWallis.MethodStat;
 import KruskalWallis.Observation;
 import KruskalWallis.Rang;
 
@@ -52,7 +53,25 @@ public class Main {
             System.out.println(AAjouter.get(0)+" || "+AAjouter.get(1)+" || "+AAjouter.get(2));
         }
 
-        int r1 = 0, r2 = 0, r3 = 0;
+        //On range les rangs par echantillon d'origine
+        ArrayList<Rang> rangGroupe1 = new ArrayList();
+        ArrayList<Rang> rangGroupe2 = new ArrayList();
+        ArrayList<Rang> rangGroupe3 = new ArrayList();
+
+        for(int i=0; i<rangParLigne.size(); i++){
+            rangGroupe1.addAll(MethodStat.trieParEchantillon(rangParLigne.get(i), groupe1));
+            rangGroupe2.addAll(MethodStat.trieParEchantillon(rangParLigne.get(i), groupe2));
+            rangGroupe3.addAll(MethodStat.trieParEchantillon(rangParLigne.get(i), groupe3));
+        }
+
+        float r1 = MethodStat.sommeRang(rangGroupe1);
+        float r2 = MethodStat.sommeRang(rangGroupe2);
+        float r3 = MethodStat.sommeRang(rangGroupe3);
+
+        System.out.println("Somme rang echantillon 1 : "+r1);
+        System.out.println("Somme rang echantillon 2 : "+r2);
+        System.out.println("Somme rang echantillon 3 : "+r3);
+
 
 
     }
